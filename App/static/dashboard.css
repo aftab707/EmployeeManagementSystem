@@ -1,0 +1,129 @@
+/* General Page Styles */
+html, body {
+    height: 100%;
+    background-color: whitesmoke;
+    color: rgb(0, 75, 93);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+    padding-top: 20px;
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.sidebar-header h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 0;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ddd;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 15px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .sidebar-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}

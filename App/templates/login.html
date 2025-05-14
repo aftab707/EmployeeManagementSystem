@@ -1,0 +1,61 @@
+{% extends 'showlinks.html' %}
+{% block start %}
+
+
+{% load static %}
+
+    <title>Login - Employee Management</title>
+
+<body>
+ 
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="form-container">
+                        <h2 class="form-title"><i class="fas fa-sign-in-alt me-2"></i>Login</h2>
+
+                        {% if messages %}
+
+                        <div class="alert alert-danger">
+                            {% for message in messages %}
+                               {{message}}
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        <form  method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="username">Username or Email</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+
+                            <div class="form-group text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <p>Don't have an account? <a href="/register/">Register here</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+{% endblock %}

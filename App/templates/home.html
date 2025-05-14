@@ -1,0 +1,78 @@
+
+{% extends "showlinks.html"%}
+{% block start %}
+{% load static %}
+ 
+  <title>Employee Management System</title>
+
+
+<body>
+ 
+  <div class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Employee Management</h1>
+        <p>Efficiently manage your workforce with our comprehensive solution</p>
+      
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card1 h-100 shadow">
+            <div class="card-body text-center">
+              <i class="fas fa-user-plus fa-3x mb-3 text-dark"></i>
+              <h4 class="card-title">Add Employees</h4>
+              <p class="card-text">Quickly add new employees with all necessary details.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card2 h-100 shadow">
+            <div class="card-body text-center">
+              <i class="fas fa-users fa-3x mb-3 text-dark"></i>
+              <h4 class="card-title">Manage Teams</h4>
+              <p class="card-text">Organize employees into teams for easier management and coordination.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card3 h-100 shadow">
+            <div class="card-body text-center">
+              <i class="fas fa-clipboard-list fa-3x mb-3 text-dark"></i>
+              <h4 class="card-title">Track Progress</h4>
+              <p class="card-text">Monitor employee performance and progress over time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card4 h-100 shadow">
+            <div class="card-body text-center">
+              <i class="fas fa-calendar-alt fa-3x mb-3 text-dark"></i>
+              <h4 class="card-title">Schedule Events</h4>
+              <p class="card-text">Create and manage company events, meetings, and appointments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+   {% endblock %}
